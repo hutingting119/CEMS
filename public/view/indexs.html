@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../JS/main.js"></script>
+    <link rel="stylesheet" href="../build/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="bodystyle" onload="showAll()">
+<div class="header" data-toggle="modal" data-target="#modal">用户管理</div>
+<span class="addUser" data-toggle="modal" data-target="#myModal"><img src="../img/add.png" alt=""></span>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="用户名请输入英文名称" id="name">
+                    </div>
+                    <img src="../img/name.png">
+                </div>
+                <br>
+
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="年龄请输入数字" id="age">
+                    </div>
+                    <img src="../img/age.png" alt="年龄">
+                </div>
+                <br>
+
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="性别请输入girl or boy" id="sex">
+                    </div>
+                    <img src="../img/sex.png" alt="性别">
+                </div>
+                <br>
+
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="读操作请输入0或1" id="phone">
+                    </div>
+                    <img src="../img/phone.png" alt="移动电话">
+                </div>
+                <br>
+
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="写操作请输入0或1" id="email">
+                    </div>
+                    <img src="../img/email.png" alt="电子邮件">
+                </div>
+                <br>
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="运行操作请输入0或1" id="remark">
+                    </div
+                    >
+                    <img src="../img/remark.png" alt="备注">
+                </div>
+                <br>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消
+                </button>
+                <button type="button" class="btn btn-primary" onclick='addNewUser()'>
+                    提交
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="updateModalLabel">修改<input id="number">号用户</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="用户名" id="updatename">
+                    </div>
+                    <img src="../img/name.png">
+                </div>
+                <br>
+
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="年龄" id="updateage">
+                    </div>
+                    <img src="../img/age.png" alt="年龄">
+                </div>
+                <br>
+
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="性别" id="updatesex">
+                    </div>
+                    <img src="../img/sex.png" alt="性别">
+                </div>
+                <br>
+
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="读操作" id="updatephone">
+                    </div>
+                    <img src="../img/phone.png" alt="移动电话">
+                </div>
+                <br>
+
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="写操作" id="updateemail">
+                    </div>
+                    <img src="../img/email.png" alt="电子邮件">
+                </div>
+                <br>
+                <div class="form-group ">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="运行操作" id="updateremark">
+                    </div>
+                    <img src="../img/remark.png" alt="备注">
+                </div>
+                <br>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消
+                </button>
+                <button type="button" class="btn btn-primary" onclick='updates()'>
+                    保存
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table" id="tables">
+    <thead>
+    <tr>
+        <th class="thStylr">编号</th>
+        <th class="thStylr">用户名</th>
+        <th class="thStylr">年龄</th>
+        <th class="thStylr">性别</th>
+        <th class="thStylr">读操作</th>
+        <th class="thStylr">写操作</th>
+        <th class="thStylr">运行操作</th>
+        <th class="thStylr">编辑</th>
+        <th class="thStylr">删除</th>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>
+

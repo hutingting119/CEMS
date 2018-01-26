@@ -1,0 +1,37 @@
+.loginTiele{
+    font-size: 30px;
+    font-style: inherit;
+    margin-top: 10%;
+    text-align: center;
+}
+#warn{
+    visibility: hidden;
+}
+
+.form-horizontal{
+    margin-left: 41%;
+}
+.loginFind{
+    margin-left: 54%;
+    color: #2aabd2;
+    font-size: 15px;
+}
+.loginSure{
+    background-color: #2aabd2;
+    height: 35px;
+    margin-top: 20px;
+    width: 210px
+
+}
+.loginAsk{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 45%;
+}
+.loginSign{
+    color: #2aabd2;
+}
+#indexHint{
+    margin-left: 34%;
+    color: red;
+}
