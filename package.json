@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "我们需要一个基于 Web 的简单数据库维护工具，能够对用户信息（User）进行 CRUD 操作，我们需要：",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hutingting119/userManagement.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hutingting119/userManagement/issues"
+  },
+  "homepage": "https://github.com/hutingting119/userManagement#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "path": "^0.12.7"
+  }
+}

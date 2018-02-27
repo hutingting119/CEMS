@@ -10,6 +10,9 @@
 
 .form-horizontal{
     margin-left: 41%;
+    position: absolute;
+    top: 35%;
+    width: 700px
 }
 .loginFind{
     margin-left: 54%;
@@ -34,4 +37,14 @@
 #indexHint{
     margin-left: 34%;
     color: red;
+}
+.login-title{
+    position: absolute;
+    left: 40%;
+    top: 18%
+}
+.findPasswordReturn{
+    position: absolute;
+    left: 1%;
+    top: 1%;
 }
