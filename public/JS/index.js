@@ -25,7 +25,7 @@ function checkPassword() {
 
 function checkIndexAll() {
     var tag=checkPhone()+checkPassword();
-    if(document.getElementById("phoneNumber").value===""||document.getElementById("loginPassword").value===""||tag!=2){
+    if(tag!=2){
         document.getElementById("indexHint").innerHTML="请填写完整信息";
         return false;
     }else {
@@ -107,10 +107,8 @@ function checkRePasswordAgain() {
 }
 
 function checkRegisterAll() {
-    console.log(checkReName()+checkReNumebr()+checkReCompany()+checkReSchool()+checkRePassword()+checkRePasswordAgain())
     var tag=checkReName()+checkReNumebr()+checkReCompany()+checkReSchool()+checkRePassword()+checkRePasswordAgain();
-    if(document.getElementById("reUserName").value===""||document.getElementById('rephoneNumber').value===""||document.getElementById("reCompany").value===""||
-        document.getElementById("reSchool").value===""||document.getElementById('rePassword').value===""||document.getElementById('rePassword').value===""||tag!=6){
+    if(tag!=6){
         document.getElementById("indexHint").innerHTML="请填写完整信息";
         return false;
     }else {
@@ -168,7 +166,7 @@ function findNumebr() {
 
 function checkFindAll() {
     var tag=checkRegisterFont()+findNumebr();
-    if(document.getElementById('findPhone').value===""||document.getElementById('findPhone').value===""||tag!=2){
+    if(tag!=2){
         document.getElementById("indexHint").innerHTML="请填写完整正确信息";
         return false;
     }else {
@@ -206,7 +204,7 @@ function checkresertPasswordAgain() {
 
 function resertFindAll() {
     var tag=checkresertPassword()+checkresertPasswordAgain();
-    if(document.getElementById('resertPassword').value===""||document.getElementById('resertPasswordAgain').value===""||tag!=2){
+    if(tag!=2){
         document.getElementById("indexHint").innerHTML="请填写完整正确信息";
         return false;
     }else {
