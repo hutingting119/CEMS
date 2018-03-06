@@ -6,15 +6,15 @@ const app = new express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-const insert = require("./mysql/insert");
-const showall=require('./mysql/showall');
+const userinsert = require("./mysql/userinsert");
+const checkPhone=require('./mysql/checkPhone');
 const del=require('./mysql/del');
 const updates=require('./mysql/updates');
 
 app.use(express.static('public'));
 
-app.use("/", insert);
-app.use('/',showall);
+app.use("/", userinsert);
+app.use('/',checkPhone);
 app.use('/',del);
 app.use('/',updates);
 

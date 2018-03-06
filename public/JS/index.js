@@ -107,14 +107,66 @@ function checkRePasswordAgain() {
 }
 
 function checkRegisterAll() {
+
     var tag=checkReName()+checkReNumebr()+checkReCompany()+checkReSchool()+checkRePassword()+checkRePasswordAgain();
     if(tag!=6){
         document.getElementById("indexHint").innerHTML="请填写完整信息";
         return false;
     }else {
-        document.getElementById("indexHint").innerHTML="";
-        return true;
+        console.log(phoneIS());
+        if(phoneIS()!=1){
+            addUser();
+            document.getElementById("indexHint").innerHTML="";
+            return true;
+
+        }else {
+            document.getElementById("indexHint").innerHTML="手机号已注册";
+            return false;
+        }
     }
+}
+
+function phoneIS() {
+    var inputNumber=document.getElementById('rephoneNumber').value;
+    $.ajax({
+        type: 'post',
+        url: '/checkPhone',
+        contentType: 'application/json;charset=utf-8',
+        success: function (result) {
+            // console.log(200);
+            for (var i = 0; i < result.length; i++) {
+               if( result[i].userphone===inputNumber){
+                   console.log("yyyyy");
+                   return 1;
+               }
+
+            }
+        }
+    });
+}
+
+function addUser() {
+    var username=document.getElementById("reUserName").value;
+    var userphone = document.getElementById('rephoneNumber').value;
+    var usercompany = document.getElementById("reCompany").value;
+    var userschool = document.getElementById("reSchool").value;
+    var userpassword = document.getElementById('rePassword').value;
+    $.ajax({
+        type:'post',
+        url:'/userinsert',
+        data:JSON.stringify({
+            userphone:userphone,
+            username:username,
+            usercompany:usercompany,
+            userschool:userschool,
+            userpassword:userpassword,
+        }),
+
+        contentType: "application/json; charset=utf-8",
+        success: function (result) {
+            location.replace(location);
+        },
+    });
 }
 
 //findPassword
