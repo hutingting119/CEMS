@@ -29,8 +29,25 @@ function checkIndexAll() {
         document.getElementById("indexHint").innerHTML = "请填写完整信息";
         return false;
     } else {
-        document.getElementById("indexHint").innerHTML = "";
-        return true;
+        var loginPhone = document.getElementById('phoneNumber').value;
+        var checkLoginPassword = document.getElementById("loginPassword").value;
+        $.ajax({
+            type: 'post',
+            url: '/checkPassword',
+            data: JSON.stringify({
+                loginPhone: loginPhone,
+            }),
+
+            contentType: "application/json; charset=utf-8",
+            success: function (result) {
+                if (checkLoginPassword === result) {
+                    location.replace("http://localhost:3000/main.html");
+                } else {
+                    document.getElementById("indexHint").innerHTML = "帐号或密码错误";
+                }
+            },
+        });
+        return false;
     }
 }
 

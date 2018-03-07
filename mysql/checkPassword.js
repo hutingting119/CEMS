@@ -2,7 +2,7 @@ var mysql = require('mysql');
 const express = require('express');
 const router = express.Router();
 
-router.post('/checkPhone', (req, res)=> {
+router.post('/checkPassword', (req, res)=> {
 
     var connection = mysql.createConnection({
         host: 'localhost',
@@ -12,14 +12,9 @@ router.post('/checkPhone', (req, res)=> {
         port: 3306
     });
     connection.connect();
-    connection.query('select * from users', function (err, result) {
-        // if (err) {
-        //     console.log('showerr');
-        //     return;
-        // }
-        res.send(result);
-        // console.log(result);
-        res.send(200);
+    var phone = req.body.loginPhone;
+    connection.query('select userpassword from users where userphone',phone, function (err, result) {
+        res.send(result[0].userpassword);
     });
 });
 

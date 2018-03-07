@@ -13,13 +13,12 @@ router.post('/userinsert', (req, res)=> {
     connection.connect();
     var addSql='INSERT INTO users(userphone, username, usercompany,userschool,userpassword) VALUES(?,?,?,?,?)';
     var addSqlParams=Object.keys(req.body).map(function (key) {
-        // console.log(req.body[key])
         return req.body[key];
     });
     console.log(addSqlParams);
     connection.query(addSql,addSqlParams, function (err, result) {
         if (err) {
-            console.log('userinsertjs+inserterr');
+            console.log('inserterr');
             return;
         }
         res.send(result);
