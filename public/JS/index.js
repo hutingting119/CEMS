@@ -24,12 +24,12 @@ function checkPassword() {
 }
 
 function checkIndexAll() {
-    var tag=checkPhone()+checkPassword();
-    if(tag!=2){
-        document.getElementById("indexHint").innerHTML="请填写完整信息";
+    var tag = checkPhone() + checkPassword();
+    if (tag != 2) {
+        document.getElementById("indexHint").innerHTML = "请填写完整信息";
         return false;
-    }else {
-        document.getElementById("indexHint").innerHTML="";
+    } else {
+        document.getElementById("indexHint").innerHTML = "";
         return true;
     }
 }
@@ -52,7 +52,7 @@ function checkReNumebr() {
     if (!reg.test(rephoneNumber)) {
         document.getElementById('rePhoneNumberWarn').innerHTML = '请先输入您的正确手机号！';
         document.getElementById('rephoneNumber').focus();
-    }else {
+    } else {
         document.getElementById('rePhoneNumberWarn').innerHTML = '';
         return 1;
     }
@@ -85,7 +85,7 @@ function checkRePassword() {
     if (rePassword.length < 6 || rePassword.length > 21) {
         document.getElementById('rePasswordWarn').innerHTML = '请输入6～20位的密码';
         document.getElementById('rePassword').focus();
-    }else {
+    } else {
         document.getElementById('rePasswordWarn').innerHTML = '';
         return 1;
     }
@@ -100,7 +100,7 @@ function checkRePasswordAgain() {
     } else if (passwordAgain != password) {
         document.getElementById('rePasswordAgainWarn').innerHTML = '两次密码不一致';
         document.getElementById('rePasswordAgain').focus();
-    }else {
+    } else {
         document.getElementById('rePasswordAgainWarn').innerHTML = '';
         return 1;
     }
@@ -108,63 +108,53 @@ function checkRePasswordAgain() {
 
 function checkRegisterAll() {
 
-    var tag=checkReName()+checkReNumebr()+checkReCompany()+checkReSchool()+checkRePassword()+checkRePasswordAgain();
-    if(tag!=6){
-        document.getElementById("indexHint").innerHTML="请填写完整信息";
+    var tag = checkReName() + checkReNumebr() + checkReCompany() + checkReSchool() + checkRePassword() + checkRePasswordAgain();
+    if (tag != 6) {
+        document.getElementById("indexHint").innerHTML = "请填写完整信息";
         return false;
-    }else {
-        console.log(phoneIS());
-        if(phoneIS()!=1){
-            addUser();
-            document.getElementById("indexHint").innerHTML="";
-            return true;
-
-        }else {
-            document.getElementById("indexHint").innerHTML="手机号已注册";
-            return false;
-        }
+    } else {
+        var inputNumber = document.getElementById('rephoneNumber').value;
+        $.ajax({
+            type: 'post',
+            url: '/checkPhone',
+            contentType: 'application/json;charset=utf-8',
+            success: function (result) {
+                var flag = 0;
+                for (var i = 0; i < result.length; i++) {
+                    if (result[i].userphone === inputNumber) {
+                        document.getElementById("indexHint").innerHTML = "手机号已注册";
+                        flag = 1;
+                    }
+                }
+                if (flag === 0) {
+                    addUser();
+                }
+            }
+        });
+        return false;
     }
 }
 
-function phoneIS() {
-    var inputNumber=document.getElementById('rephoneNumber').value;
-    $.ajax({
-        type: 'post',
-        url: '/checkPhone',
-        contentType: 'application/json;charset=utf-8',
-        success: function (result) {
-            // console.log(200);
-            for (var i = 0; i < result.length; i++) {
-               if( result[i].userphone===inputNumber){
-                   console.log("yyyyy");
-                   return 1;
-               }
-
-            }
-        }
-    });
-}
-
 function addUser() {
-    var username=document.getElementById("reUserName").value;
+    var username = document.getElementById("reUserName").value;
     var userphone = document.getElementById('rephoneNumber').value;
     var usercompany = document.getElementById("reCompany").value;
     var userschool = document.getElementById("reSchool").value;
     var userpassword = document.getElementById('rePassword').value;
     $.ajax({
-        type:'post',
-        url:'/userinsert',
-        data:JSON.stringify({
-            userphone:userphone,
-            username:username,
-            usercompany:usercompany,
-            userschool:userschool,
-            userpassword:userpassword,
+        type: 'post',
+        url: '/userinsert',
+        data: JSON.stringify({
+            userphone: userphone,
+            username: username,
+            usercompany: usercompany,
+            userschool: userschool,
+            userpassword: userpassword,
         }),
 
         contentType: "application/json; charset=utf-8",
         success: function (result) {
-            location.replace(location);
+            location.replace("http://localhost:3000/");
         },
     });
 }
@@ -210,19 +200,19 @@ function findNumebr() {
     if (!reg.test(findPhone)) {
         document.getElementById('findPhonewarn').innerHTML = '请先输入您的正确手机号！';
         document.getElementById('findPhone').focus();
-    }else {
+    } else {
         document.getElementById('findPhonewarn').innerHTML = '';
         return 1;
     }
 }
 
 function checkFindAll() {
-    var tag=checkRegisterFont()+findNumebr();
-    if(tag!=2){
-        document.getElementById("indexHint").innerHTML="请填写完整正确信息";
+    var tag = checkRegisterFont() + findNumebr();
+    if (tag != 2) {
+        document.getElementById("indexHint").innerHTML = "请填写完整正确信息";
         return false;
-    }else {
-        document.getElementById("indexHint").innerHTML="";
+    } else {
+        document.getElementById("indexHint").innerHTML = "";
         return true;
     }
 }
@@ -233,7 +223,7 @@ function checkresertPassword() {
     if (rePassword.length < 6 || rePassword.length > 21) {
         document.getElementById('resertPasswordwarn').innerHTML = '请输入6～20位的密码';
         document.getElementById('resertPassword').focus();
-    }else {
+    } else {
         document.getElementById('resertPasswordwarn').innerHTML = '';
         return 1;
     }
@@ -248,19 +238,19 @@ function checkresertPasswordAgain() {
     } else if (passwordAgain != password) {
         document.getElementById('resertPasswordAgainwarn').innerHTML = '两次密码不一致';
         document.getElementById('resertPasswordAgain').focus();
-    }else {
+    } else {
         document.getElementById('resertPasswordAgainwarn').innerHTML = '';
         return 1;
     }
 }
 
 function resertFindAll() {
-    var tag=checkresertPassword()+checkresertPasswordAgain();
-    if(tag!=2){
-        document.getElementById("indexHint").innerHTML="请填写完整正确信息";
+    var tag = checkresertPassword() + checkresertPasswordAgain();
+    if (tag != 2) {
+        document.getElementById("indexHint").innerHTML = "请填写完整正确信息";
         return false;
-    }else {
-        document.getElementById("indexHint").innerHTML="";
+    } else {
+        document.getElementById("indexHint").innerHTML = "";
         return true;
     }
 }
