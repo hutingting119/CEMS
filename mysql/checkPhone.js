@@ -13,12 +13,12 @@ router.post('/checkPhone', (req, res)=> {
     });
     connection.connect();
     connection.query('select * from users', function (err, result) {
-        // if (err) {
-        //     console.log('showerr');
-        //     return;
-        // }
+        if (err) {
+            console.log('showerr');
+            return;
+        }
         res.send(result);
-        // console.log(result);
+        console.log(result);
         res.send(200);
     });
 });

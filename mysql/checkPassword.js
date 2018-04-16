@@ -14,6 +14,7 @@ router.post('/checkPassword', (req, res)=> {
     connection.connect();
     var phone = req.body.loginPhone;
     connection.query('select userpassword from users where userphone',phone, function (err, result) {
+        console.log('password'+result[0].userpassword)
         res.send(result[0].userpassword);
     });
 });

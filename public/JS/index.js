@@ -40,6 +40,7 @@ function checkIndexAll() {
 
             contentType: "application/json; charset=utf-8",
             success: function (result) {
+                console.log("index.js"+result)
                 if (checkLoginPassword === result) {
                     location.replace("http://localhost:3000/main.html");
                 } else {

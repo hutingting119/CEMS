@@ -1,0 +1,81 @@
+body {
+    width: 98.5%;
+    background-color: #dddddd;
+}
+
+.mainTitle {
+    height: 120px;
+    background-image: url("../images/title.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainHead {
+    float: left;
+    margin-left: 40px;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.mainTitleMenu {
+    color: #FFFF53;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 73px;;
+}
+
+.exit {
+    float: right;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.maindatas {
+    clear: both;
+    background-color: #FFFFFF;
+    width: 80%;
+    margin-left: 10%;
+    min-height: 580px;
+}
+
+.mainData {
+    list-style-type: none;
+    border: 1px dashed #ddd;
+    height: 170px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mainDataImg {
+    padding-left: 500px;
+}
+
+.mainDataBody {
+    color: blue;
+    padding-top: 20px;
+    width: 884px;
+    padding-left: 65px;
+}
+
+.article_manage {
+    padding-top: 40px;
+    padding-left: 370px;
+    color: #999;
+}
+
+.link_view {
+    margin-left: 20px;
+}
+
+.link_comments {
+    margin-left: 20px;
+}
+
+.link_edit {
+    margin-left: 20px;
+}
+
+.link_delete {
+    margin-left: 20px;
+}
