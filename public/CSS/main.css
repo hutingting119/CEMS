@@ -79,3 +79,8 @@ body {
 .link_delete {
     margin-left: 20px;
 }
+
+.mainTitleMenu a{
+    color: yellow;
+    cursor: pointer;
+}

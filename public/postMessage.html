@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="JS/index.js"></script>
+    <script type="text/javascript" src="build/JS/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="build/JS/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" href="build/css/bootstrap.css">
+    <script type="text/javascript" src="build/JS/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/postMessage.css">
+</head>
+<body>
+<header class="row mainTitle">
+    <span class="mainHead">全城就业管理系统</span>
+    <div class="col-sm-5 mainTitleMenu">
+        <a class="col-sm-3" href="main.html">主页</a>
+        <a href="postMessage.html" class="col-sm-3">发帖</a>
+        <a class="col-sm-3" href="select.html">查询</a>
+        <a class="col-sm-3" href="setting.html">设置</a>
+    </div>
+    <button class="btn btn-danger exit">退出</button>
+</header>
+
+<div class="maindatas">
+    <div class="postTitle">发表新贴</div>
+    <input type="text" class="form-control" placeholder="请填写标题">
+    <span class="postLabel">标签: </span>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios1" value="option1" checked><span
+            class="label-info"> [推荐]</span>
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios2" value="option2"><span class="label-success"> [置顶]</span>
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option2"><span class="label-danger"> [爆]</span>
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4" value="option2"><span class="label-default"> [私密]</span>
+    </label>
+    <textarea class="form-control postbody" style="height: 300px;" placeholder="从这里开始输入..."></textarea>
+    <div class="postButtons">
+        <button type="button" class="btn btn-success">提交</button>
+        <button type="button" class="btn btn-default">清空</button>
+        <button type="button" class="btn btn-info">取消</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+.postTitle {
+    border: 1px dashed #ddd;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 90px;
+    font-size: 33px;
+    font-style: oblique;;
+}
+
+.postTitle + input {
+    width: 780px;
+    margin-left: 90px;
+}
+
+.postLabel {
+    margin-left: 200px;
+    color: lightslategrey;
+}
+
+.postbody {
+    width: 780px;
+    margin-left: 90px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.postButtons{
+    margin-top: 20px;
+    margin-left: 600px;
+}
