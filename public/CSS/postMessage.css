@@ -24,7 +24,32 @@
     margin-top: 20px;
 }
 
-.postButtons{
+.postButtons {
     margin-top: 20px;
     margin-left: 600px;
+}
+
+.settingTitle {
+    border: 1px dashed #ddd;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 250px;
+    font-size: 33px;
+    font-style: oblique;
+    color: #337ab7;
+}
+
+.settingTitleSpan {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.settingForm {
+    margin-top: 95px;
+    width: 500px;
+    margin-left: 230px;
+}
+
+.settlingButton {
+    margin-left: 327px;
 }

@@ -1,4 +1,17 @@
 .selectTitle {
-    width: 700px;
+    width: 600px;
     margin-left: 165px;
+}
+
+#selectData {
+    width: 900px;
+    height: 400px;
+    margin-top: 60px;
+    margin-left: 90px;
+}
+
+.selectButton {
+    position: relative;
+    margin-top: -56px;
+    margin-left: 765px;
 }

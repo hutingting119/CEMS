@@ -19,6 +19,7 @@
   "homepage": "https://github.com/hutingting119/userManagement#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "echarts": "^4.0.4",
     "path": "^0.12.7"
   }
 }

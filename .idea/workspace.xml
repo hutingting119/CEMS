@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60369308-d958-4eb1-8881-dbb9ac4eff34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/CSS/postMessage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/CSS/select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/postMessage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/select.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/setting.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/view/indexs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/view/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/view/module.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/CSS/main.css" afterPath="$PROJECT_DIR$/public/CSS/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/CSS/index.css" afterPath="$PROJECT_DIR$/public/CSS/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/CSS/postMessage.css" afterPath="$PROJECT_DIR$/public/CSS/postMessage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/CSS/select.css" afterPath="$PROJECT_DIR$/public/CSS/select.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/main.html" afterPath="$PROJECT_DIR$/public/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/postMessage.html" afterPath="$PROJECT_DIR$/public/postMessage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/select.html" afterPath="$PROJECT_DIR$/public/select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/setting.html" afterPath="$PROJECT_DIR$/public/setting.html" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,28 +36,41 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="63" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="63" />
+            <state relative-caret-position="315">
+              <caret line="21" column="91" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="select.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/select.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="54" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="54" />
+            <state relative-caret-position="240">
+              <caret line="23" column="82" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="82" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#button#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#1668#1675#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/CSS/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="select.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/CSS/select.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -68,19 +79,12 @@
       <file leaf-file-name="setting.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/setting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/CSS/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="24" selection-start-line="41" selection-start-column="3" selection-end-line="46" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="330">
+              <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#1667#1674#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,8 +92,8 @@
       <file leaf-file-name="postMessage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/CSS/postMessage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="532">
+              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -98,8 +102,8 @@
       <file leaf-file-name="postMessage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/postMessage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="27" column="64" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="64" />
+            <state relative-caret-position="127">
+              <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -146,9 +150,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -158,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/insert.js" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/main.css" />
@@ -190,7 +193,6 @@
         <option value="$PROJECT_DIR$/public/CSS/find-reset.css" />
         <option value="$PROJECT_DIR$/public/JS/find-reset.js" />
         <option value="$PROJECT_DIR$/public/view/findPassword.html" />
-        <option value="$PROJECT_DIR$/public/CSS/index.css" />
         <option value="$PROJECT_DIR$/public/findPassword.html" />
         <option value="$PROJECT_DIR$/public/resertPassword.html" />
         <option value="$PROJECT_DIR$/mysql/connection.js" />
@@ -203,12 +205,14 @@
         <option value="$PROJECT_DIR$/mysql/checkPassword.js" />
         <option value="$PROJECT_DIR$/public/JS/index.js" />
         <option value="$PROJECT_DIR$/public/CSS/main.css" />
-        <option value="$PROJECT_DIR$/public/main.html" />
-        <option value="$PROJECT_DIR$/public/CSS/postMessage.css" />
-        <option value="$PROJECT_DIR$/public/postMessage.html" />
-        <option value="$PROJECT_DIR$/public/setting.html" />
-        <option value="$PROJECT_DIR$/public/select.html" />
+        <option value="$PROJECT_DIR$/public/JS/select.js" />
         <option value="$PROJECT_DIR$/public/CSS/select.css" />
+        <option value="$PROJECT_DIR$/public/CSS/postMessage.css" />
+        <option value="$PROJECT_DIR$/public/CSS/index.css" />
+        <option value="$PROJECT_DIR$/public/main.html" />
+        <option value="$PROJECT_DIR$/public/setting.html" />
+        <option value="$PROJECT_DIR$/public/postMessage.html" />
+        <option value="$PROJECT_DIR$/public/select.html" />
       </list>
     </option>
   </component>
@@ -250,7 +254,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,12 +300,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="JS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CEMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CEMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="CSS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,11 +488,12 @@
       <workItem from="1523840953816" duration="16644000" />
       <workItem from="1523933869553" duration="5975000" />
       <workItem from="1523946571441" duration="8000" />
+      <workItem from="1524009584041" duration="2819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175321000" />
+    <option name="totallyTimeSpent" value="182879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="24" width="1299" height="744" extended-state="6" />
@@ -533,7 +556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/view/indexs.html" />
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7-dist/js/npm.js" />
     <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/img/1.jpg" />
@@ -630,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/CSS/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/img/3.jpg" />
     <entry file="file://$PROJECT_DIR$/public/img/add.png" />
     <entry file="file://$PROJECT_DIR$/public/img/age.png" />
@@ -725,22 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/CSS/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="24" selection-start-line="41" selection-start-column="3" selection-end-line="46" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="63" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -769,45 +768,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/JS/select.js" />
+    <entry file="file://$PROJECT_DIR$/public/CSS/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/CSS/postMessage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="532">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/CSS/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="91" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#1667#1674#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/postMessage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="27" column="64" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="64" />
+        <state relative-caret-position="127">
+          <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
           <folding>
             <element signature="n#style#0;n#textarea#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/setting.html">
+    <entry file="file://$PROJECT_DIR$/public/CSS/select.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/select.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="54" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/CSS/select.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="240">
+          <caret line="23" column="82" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#button#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1668#1675#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

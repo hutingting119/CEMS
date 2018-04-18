@@ -10,6 +10,7 @@
     <script type="text/javascript" src="build/JS/bootstrap.min.js"></script>
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/select.css">
+    <script src="../node_modules/echarts/dist/echarts.min.js"></script>
 </head>
 <body>
 <header class="row mainTitle">
@@ -20,12 +21,69 @@
         <a class="col-sm-3" href="select.html">查询</a>
         <a class="col-sm-3" href="setting.html">设置</a>
     </div>
-    <button class="btn btn-danger exit">退出</button>
+    <button class="btn btn-danger exit" ><a href="index.html" style="color: white">退出</a></button>
 </header>
 
 <div class="maindatas">
     <input type="text" class="form-control selectTitle" placeholder="请输入公司名称">
-</div>
+    <button type="button" class="btn btn-success selectButton" data-toggle="modal" data-target="#myModal">查询</button>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        阿里巴巴就就业人数
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    2018届 就业人数2000人
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="selectData"></div>
 
+</div>
+<script>
+    var myChart = echarts.init(document.getElementById('selectData'));
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: '毕业生就业排行榜（前8名）'
+        },
+        tooltip: {},
+        legend: {
+            data: ['就业人数']
+        },
+        xAxis: {
+            data: ["三星电子", "阿里巴巴", "腾讯", "苏宁", "中国人寿", "阳光金投资", "中国大唐集团", "山西煤业"]
+        },
+        yAxis: {},
+        series: [{
+            itemStyle: {
+                // 点的颜色。
+                color: '#dddddd'
+            },
+            emphasis: {
+                itemStyle: {
+                    // 高亮时点的颜色。
+                    color: 'yellow'
+                },
+
+            },
+            name: '就业人数',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10, 20, 50, 30]
+        }]
+    };
+    myChart.setOption(option);
+</script>
 </body>
 </html>

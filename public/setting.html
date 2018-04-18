@@ -20,9 +20,64 @@
         <a class="col-sm-3" href="select.html">查询</a>
         <a class="col-sm-3" href="setting.html">设置</a>
     </div>
-    <button class="btn btn-danger exit">退出</button>
+    <button class="btn btn-danger exit" ><a href="index.html" style="color: white">退出</a></button>
 </header>
+<div class="maindatas">
+    <div class="settingTitle">
+        <span class="settingTitleSpan">个人信息</span>
+        <span class="settingTitleSpan"><a href="resertPassword.html">修改密码</a></span>
+        <span class="settingTitleSpan"  data-toggle="modal" data-target="#myModal">关于</span>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
 
+                </div>
+                <div class="modal-body">
+                    同城同校就业信息的同步管理对于应届毕业生的就业指导有着重要的作用，应届毕业生在就业信息获取和意向公司选择之间往往存在困难。
+                    就业招聘信息的实时更新,往届学生对应届学生意向公司选择具有很重要的影响作用,但目前市场上还没有针对应届就业问题，
+                    提供一个专注于共享往届毕业生就业信息分享、就业经验讨论的平台。因此,开发一个同城毕业生就业信息管理系统很有必要。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form class="form-horizontal settingForm" role="form">
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">昵称</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control"
+                       placeholder="请输入昵称">
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">就业公司</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control"
+                       placeholder="请输入就业公司">
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">毕业院校</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control"
+                       placeholder="请输入毕业公司">
+            </div>
+        </div>
 
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-success settlingButton">确认重置</button>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>
