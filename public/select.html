@@ -15,11 +15,12 @@
 <body>
 <header class="row mainTitle">
     <span class="mainHead">全城就业管理系统</span>
-    <div class="col-sm-5 mainTitleMenu">
-        <a class="col-sm-3" href="main.html">主页</a>
-        <a href="postMessage.html" class="col-sm-3">发帖</a>
-        <a class="col-sm-3" href="select.html">查询</a>
-        <a class="col-sm-3" href="setting.html">设置</a>
+    <div class="col-sm-7  mainTitleMenu">
+        <a class="col-sm-2" href="main.html">主页</a>
+        <a href="postMessage.html" class="col-sm-2">发帖</a>
+        <a href="recruitment.html" class="col-sm-2">招聘</a>
+        <a class="col-sm-2" href="select.html">查询</a>
+        <a class="col-sm-2" href="setting.html">设置</a>
     </div>
     <button class="btn btn-danger exit" ><a href="index.html" style="color: white">退出</a></button>
 </header>
@@ -53,7 +54,6 @@
 </div>
 <script>
     var myChart = echarts.init(document.getElementById('selectData'));
-    // 指定图表的配置项和数据
     var option = {
         title: {
             text: '毕业生就业排行榜（前8名）'
@@ -68,12 +68,10 @@
         yAxis: {},
         series: [{
             itemStyle: {
-                // 点的颜色。
                 color: '#dddddd'
             },
             emphasis: {
                 itemStyle: {
-                    // 高亮时点的颜色。
                     color: 'yellow'
                 },
 

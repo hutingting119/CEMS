@@ -40,9 +40,10 @@ function checkIndexAll() {
 
             contentType: "application/json; charset=utf-8",
             success: function (result) {
-                console.log("index.js"+result)
+                console.log("index.js" + result)
                 if (checkLoginPassword === result) {
-                    location.replace("http://localhost:3000/main.html");
+                    window.location.href="http://localhost:3000/main.html?userPhone="+loginPhone;
+                    // location.replace("http://localhost:3000/main.html");
                 } else {
                     document.getElementById("indexHint").innerHTML = "帐号或密码错误";
                 }
