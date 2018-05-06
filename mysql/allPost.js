@@ -2,7 +2,8 @@ var mysql = require('mysql');
 const express = require('express');
 const router = express.Router();
 
-router.post('/insertPost', (req, res)=> {
+router.post('/allPost', (req, res)=> {
+
     var connection = mysql.createConnection({
         host: 'localhost',
         user: 'root',
@@ -11,12 +12,9 @@ router.post('/insertPost', (req, res)=> {
         port: 3306
     });
     connection.connect();
-    var addSql = 'INSERT INTO post(title, body, label,readed,comments,author,time,school,company) VALUES(?,?,?,?,?,?,?,?,?)';
-    var addSqlParams = Object.keys(req.body).map(function (key) {
-        return req.body[key];
-    });
-    connection.query(addSql, addSqlParams, function (err, result) {
+    connection.query('select * from post', function (err, result) {
         if (err) {
+            console.log('allPost');
             return;
         }
         res.send(result);

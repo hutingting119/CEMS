@@ -10,7 +10,7 @@
     <script type="text/javascript" src="build/JS/bootstrap.min.js"></script>
     <link rel="stylesheet" href="CSS/main.css">
 </head>
-<body>
+<body onload="allPost()">
 
 <header class="row mainTitle">
     <span class="mainHead">全城就业管理系统</span>
@@ -23,126 +23,112 @@
     </div>
     <button class="btn btn-danger exit" ><a href="index.html" style="color: white">退出</a></button>
 </header>
-<div class="maindatas">
-    <div class="mainData">
-        <a>在微软的第108天 </a><span class="label-success"> [置顶]</span>
-        <span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>
-        <div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！
-            手把手带你拿下春招offer！......
-        </div>
-        <div class="article_manage">
-            <span class="link_postdate">2018-04-12 11:26:40</span>
-            <span class="link_view">
-               <a href=""><img src="./images/read.png" alt="">阅读</a>(17)
-            </span>
-            <span class="link_comments">
-               <a href=""><img src="./images/comment.png" alt="">评论</a>(0)
-            </span>
-            <span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>
-            <span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>
-            <span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>
-        </div>
-    </div>
+<div class="maindatas" >
 
-    <div class="mainData">
-        <a>在微软的第108天 </a><span class="label-danger"> [爆]</span>
-        <span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>
-        <div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！
-            手把手带你拿下春招offer！......
-        </div>
-        <div class="article_manage">
-            <span class="link_postdate">2018-04-12 11:26:40</span>
-            <span class="link_view">
-               <a href=""><img src="./images/read.png" alt="">阅读</a>(17)
-            </span>
-            <span class="link_comments">
-               <a href=""><img src="./images/comment.png" alt="">评论</a>(0)
-            </span>
-            <span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>
-            <span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>
-            <span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>
-        </div>
-    </div>
+    <table id="tables" style="width: 100%;">
+    </table>
 
-    <div class="mainData">
-        <a>在微软的第108天 </a>
-        <span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>
-        <div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！
-            手把手带你拿下春招offer！......
-        </div>
-        <div class="article_manage">
-            <span class="link_postdate">2018-04-12 11:26:40</span>
-            <span class="link_view">
-               <a href=""><img src="./images/read.png" alt="">阅读</a>(17)
-            </span>
-            <span class="link_comments">
-               <a href=""><img src="./images/comment.png" alt="">评论</a>(0)
-            </span>
-            <span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>
-            <span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>
-            <span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>
-        </div>
-    </div>
 
-    <div class="mainData">
-        <a>在微软的第108天 </a>
-        <span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>
-        <div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！
-            手把手带你拿下春招offer！......
-        </div>
-        <div class="article_manage">
-            <span class="link_postdate">2018-04-12 11:26:40</span>
-            <span class="link_view">
-               <a href=""><img src="./images/read.png" alt="">阅读</a>(17)
-            </span>
-            <span class="link_comments">
-               <a href=""><img src="./images/comment.png" alt="">评论</a>(0)
-            </span>
-            <span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>
-            <span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>
-            <span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>
-        </div>
-    </div>
 
-    <div class="mainData">
-        <a>在微软的第108天 </a><span class="label-info"> [推荐]</span>
-        <span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>
-        <div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！
-            手把手带你拿下春招offer！......
-        </div>
-        <div class="article_manage">
-            <span class="link_postdate">2018-04-12 11:26:40</span>
-            <span class="link_view">
-               <a href=""><img src="./images/read.png" alt="">阅读</a>(17)
-            </span>
-            <span class="link_comments">
-               <a href=""><img src="./images/comment.png" alt="">评论</a>(0)
-            </span>
-            <span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>
-            <span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>
-            <span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>
-        </div>
-    </div>
+    <!--<div class="mainData">-->
+        <!--<a>在微软的第108天 </a><span class="label-danger"> [爆]</span>-->
+        <!--<span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>-->
+        <!--<div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！-->
+            <!--手把手带你拿下春招offer！......-->
+        <!--</div>-->
+        <!--<div class="article_manage">-->
+            <!--<span class="link_postdate">2018-04-12 11:26:40</span>-->
+            <!--<span class="link_view">-->
+               <!--<a href=""><img src="./images/read.png" alt="">阅读</a>(17)-->
+            <!--</span>-->
+            <!--<span class="link_comments">-->
+               <!--<a href=""><img src="./images/comment.png" alt="">评论</a>(0)-->
+            <!--</span>-->
+            <!--<span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>-->
+            <!--<span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>-->
+            <!--<span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>-->
+        <!--</div>-->
+    <!--</div>-->
 
-    <div class="mainData">
-        <a>在微软的第108天 </a>
-        <span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>
-        <div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！
-            手把手带你拿下春招offer！......
-        </div>
-        <div class="article_manage">
-            <span class="link_postdate">2018-04-12 11:26:40</span>
-            <span class="link_view">
-               <a href=""><img src="./images/read.png" alt="">阅读</a>(17)
-            </span>
-            <span class="link_comments">
-               <a href=""><img src="./images/comment.png" alt="">评论</a>(0)
-            </span>
-            <span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>
-            <span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>
-            <span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>
-        </div>
-    </div>
+    <!--<div class="mainData">-->
+        <!--<a>在微软的第108天 </a>-->
+        <!--<span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>-->
+        <!--<div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！-->
+            <!--手把手带你拿下春招offer！......-->
+        <!--</div>-->
+        <!--<div class="article_manage">-->
+            <!--<span class="link_postdate">2018-04-12 11:26:40</span>-->
+            <!--<span class="link_view">-->
+               <!--<a href=""><img src="./images/read.png" alt="">阅读</a>(17)-->
+            <!--</span>-->
+            <!--<span class="link_comments">-->
+               <!--<a href=""><img src="./images/comment.png" alt="">评论</a>(0)-->
+            <!--</span>-->
+            <!--<span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>-->
+            <!--<span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>-->
+            <!--<span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="mainData">-->
+        <!--<a>在微软的第108天 </a>-->
+        <!--<span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>-->
+        <!--<div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！-->
+            <!--手把手带你拿下春招offer！......-->
+        <!--</div>-->
+        <!--<div class="article_manage">-->
+            <!--<span class="link_postdate">2018-04-12 11:26:40</span>-->
+            <!--<span class="link_view">-->
+               <!--<a href=""><img src="./images/read.png" alt="">阅读</a>(17)-->
+            <!--</span>-->
+            <!--<span class="link_comments">-->
+               <!--<a href=""><img src="./images/comment.png" alt="">评论</a>(0)-->
+            <!--</span>-->
+            <!--<span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>-->
+            <!--<span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>-->
+            <!--<span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="mainData">-->
+        <!--<a>在微软的第108天 </a><span class="label-info"> [推荐]</span>-->
+        <!--<span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>-->
+        <!--<div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！-->
+            <!--手把手带你拿下春招offer！......-->
+        <!--</div>-->
+        <!--<div class="article_manage">-->
+            <!--<span class="link_postdate">2018-04-12 11:26:40</span>-->
+            <!--<span class="link_view">-->
+               <!--<a href=""><img src="./images/read.png" alt="">阅读</a>(17)-->
+            <!--</span>-->
+            <!--<span class="link_comments">-->
+               <!--<a href=""><img src="./images/comment.png" alt="">评论</a>(0)-->
+            <!--</span>-->
+            <!--<span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>-->
+            <!--<span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>-->
+            <!--<span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="mainData">-->
+        <!--<a>在微软的第108天 </a>-->
+        <!--<span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>-->
+        <!--<div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！-->
+            <!--手把手带你拿下春招offer！......-->
+        <!--</div>-->
+        <!--<div class="article_manage">-->
+            <!--<span class="link_postdate">2018-04-12 11:26:40</span>-->
+            <!--<span class="link_view">-->
+               <!--<a href=""><img src="./images/read.png" alt="">阅读</a>(17)-->
+            <!--</span>-->
+            <!--<span class="link_comments">-->
+               <!--<a href=""><img src="./images/comment.png" alt="">评论</a>(0)-->
+            <!--</span>-->
+            <!--<span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>-->
+            <!--<span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>-->
+            <!--<span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>-->
+        <!--</div>-->
+    <!--</div>-->
 
 </div>
 <script>

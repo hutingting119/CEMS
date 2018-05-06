@@ -42,7 +42,7 @@ function checkIndexAll() {
             success: function (result) {
                 console.log("index.js" + result)
                 if (checkLoginPassword === result) {
-                    window.location.href="http://localhost:3000/main.html?userPhone="+loginPhone;
+                    window.location.href = "http://localhost:3000/main.html?userPhone=" + loginPhone;
                     // location.replace("http://localhost:3000/main.html");
                 } else {
                     document.getElementById("indexHint").innerHTML = "帐号或密码错误";
@@ -272,4 +272,87 @@ function resertFindAll() {
         document.getElementById("indexHint").innerHTML = "";
         return true;
     }
+}
+
+//显示所有帖子
+function allPost() {
+    $.ajax({
+        type: 'post',
+        url: '/allPost',
+        contentType: 'application/json;charset=utf-8',
+        success: function (result) {
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i])
+                let title = result[i].title;
+                let body = result[i].body;
+                let label = result[i].label;
+                let readed = result[i].readed;
+                let comments = result[i].comments;
+                let author = result[i].author;
+                let time = result[i].time;
+                let school = result[i].school;
+                let company = result[i].company;
+                var addTr = document.createElement('tr');
+                addTr.title = result[i].title;
+                addTr.body = result[i].body;
+                addTr.label = result[i].label;
+                addTr.readed = result[i].readed;
+                addTr.comments = result[i].comments;
+                addTr.author = result[i].author;
+                addTr.time = result[i].time;
+                addTr.school = result[i].school;
+                addTr.company = result[i].company;
+
+                //     <div class="mainData">
+                //         <a>在微软的第108天 </a><span class="label-success"> [置顶]</span>
+                //         <span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>
+                //         <div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！
+                //             手把手带你拿下春招offer！......
+                //         </div>
+                //         <div class="article_manage">
+                //             <span class="link_postdate">2018-04-12 11:26:40</span>
+                //             <span class="link_view">
+                //    <a href=""><img src="./images/read.png" alt="">阅读</a>(17)
+                // </span>
+                //             <span class="link_comments">
+                //    <a href=""><img src="./images/comment.png" alt="">评论</a>(0)
+                // </span>
+                //             <span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>
+                //             <span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>
+                //             <span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>
+                //         </div>
+                //     </div>
+
+                var comm = '';
+                if (comments === '') {
+                    comm = 0;
+                } else {
+                    comm = comments.length;
+                }
+                var labels = "";
+                console.log("index333:"+label)
+                switch (label) {
+                    case "option1":
+                        labels = "<span class='label-info'>[推荐]</span>";
+                        break;
+                    case "option2":
+                        labels = "<span class='label-success'>[置顶]</span>";
+                        break;
+                    case "option3":
+                        labels = "<span class='label-danger'>[爆]</span>";
+                        break;
+                    default:
+                        labels = "";
+                }
+                addTr.innerHTML = "<div class='mainData'><a>" + title + "</a>" + labels + "<span class='mainDataImg'>" +
+                    "<img src='../images/author.png'>" + author + "</span><div class='mainDataBody'>" + body + "</div>" +
+                    "<div class='article_manage'><span class='link_postdate'>" + time + "</span><span class='link_view'>" +
+                    "<a href=''><img src='../images/read.png' alt=''>阅读</a>(" + readed + ")" + "</span><span class='link_comments'>" +
+                    "<a href='../images/comment.png'>评论</a>(" + comm + ")</span><span class='link_edit'>" +
+                    "<a href='../images/edit.png'>编辑</a></span><span class='link_edit'><a href=''><img src='../images/stick.png' alt=''>置顶" +
+                    "</a></span><span class='link_delete'><a href=''><img src='../images/dele.png' alt=''>删除</a></span></div></div>";
+                document.getElementById('tables').appendChild(addTr);
+            }
+        }
+    })
 }

@@ -18,7 +18,7 @@ router.post('/checkPhone', (req, res)=> {
             return;
         }
         res.send(result);
-        res.send(200);
+        // res.send(200);
     });
 });
 
