@@ -302,35 +302,11 @@ function allPost() {
                 addTr.time = result[i].time;
                 addTr.school = result[i].school;
                 addTr.company = result[i].company;
-
-                //     <div class="mainData">
-                //         <a>在微软的第108天 </a><span class="label-success"> [置顶]</span>
-                //         <span class="mainDataImg"><img src="./images/author.png" alt="发帖人">毕业生</span>
-                //         <div class="mainDataBody"> 春招已经在不知不觉中开始啦！你有没有准备好了呢？是不是自己实力还不够，现在时间真的还来得及，但是现在还不抓紧，后面就真的会非常后悔啦！
-                //             手把手带你拿下春招offer！......
-                //         </div>
-                //         <div class="article_manage">
-                //             <span class="link_postdate">2018-04-12 11:26:40</span>
-                //             <span class="link_view">
-                //    <a href=""><img src="./images/read.png" alt="">阅读</a>(17)
-                // </span>
-                //             <span class="link_comments">
-                //    <a href=""><img src="./images/comment.png" alt="">评论</a>(0)
-                // </span>
-                //             <span class="link_edit"><a href=""><img src="./images/edit.png" alt="">编辑</a></span>
-                //             <span class="link_edit"><a href=""><img src="./images/stick.png" alt="">置顶</a></span>
-                //             <span class="link_delete"><a href=""><img src="./images/dele.png" alt="">删除</a></span>
-                //         </div>
-                //     </div>
-
                 var comm = '';
                 if (comments === '') {
                     comm = 0;
-                } else {
-                    comm = comments.length;
                 }
                 var labels = "";
-                console.log("index333:"+label)
                 switch (label) {
                     case "option1":
                         labels = "<span class='label-info'>[推荐]</span>";
@@ -345,14 +321,34 @@ function allPost() {
                         labels = "";
                 }
                 addTr.innerHTML = "<div class='mainData'><a>" + title + "</a>" + labels + "<span class='mainDataImg'>" +
-                    "<img src='../images/author.png'>" + author + "</span><div class='mainDataBody'>" + body + "</div>" +
-                    "<div class='article_manage'><span class='link_postdate'>" + time + "</span><span class='link_view'>" +
-                    "<a href=''><img src='../images/read.png' alt=''>阅读</a>(" + readed + ")" + "</span><span class='link_comments'>" +
-                    "<a href='../images/comment.png'>评论</a>(" + comm + ")</span><span class='link_edit'>" +
-                    "<a href='../images/edit.png'>编辑</a></span><span class='link_edit'><a href=''><img src='../images/stick.png' alt=''>置顶" +
-                    "</a></span><span class='link_delete'><a href=''><img src='../images/dele.png' alt=''>删除</a></span></div></div>";
+                    "发帖人：" + author + "&nbsp;&nbsp;&nbsp;就业公司：" + company + "&nbsp;&nbsp;&nbsp;&nbsp;毕业院校:" +
+                    school + "</span><div class='mainDataBody'>" + body + "</div><div class='article_manage'>" +
+                    "<span class='link_postdate'>" + time + "</span><span class='link_view'><a href=''>" +
+                    "<img src='../images/read.png'>阅读</a>(" + readed + ")" + "</span><span class='link_comments'>" +
+                    "<a href=''><img src='../images/comment.png' alt=''>评论</a>(" + comm + ")</span>" +
+                    "<span class='link_edit'><a href=''><img src='../images/edit.png' alt=''>编辑</a></span>" +
+                    "<span class='link_edit'><a href=''><img src='../images/stick.png' alt=''>置顶</a></span>" +
+                    "<span class='link_delete' onclick='delet(this)'>" +
+                    "<a href=''><img src='../images/dele.png' alt=''>删除</a></span></div></div>";
                 document.getElementById('tables').appendChild(addTr);
+
             }
+        }
+    })
+}
+
+function delet(obj) {
+    var trId = obj.parentNode.parentNode.id;
+    var trObj = document.getElementById(trId);
+    document.getElementById("tables").removeChild(trObj);
+    $.ajax({
+        type: "post",
+        url: "/delPost",
+        data: JSON.stringify({id: trId}),
+        contentType: "application/json;charset=utf-8",
+        success: function (result) {
+            allPost();
+            console.log(result);
         }
     })
 }

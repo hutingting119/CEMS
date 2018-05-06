@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60369308-d958-4eb1-8881-dbb9ac4eff34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysql/allPost.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysql/delPost.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/checkPhone.js" afterPath="$PROJECT_DIR$/mysql/checkPhone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/allPost.js" afterPath="$PROJECT_DIR$/mysql/allPost.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/connection.js" afterPath="$PROJECT_DIR$/mysql/connection.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/insertPost.js" afterPath="$PROJECT_DIR$/mysql/insertPost.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/JS/index.js" afterPath="$PROJECT_DIR$/public/JS/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/JS/postMessage.js" afterPath="$PROJECT_DIR$/public/JS/postMessage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/main.html" afterPath="$PROJECT_DIR$/public/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/postMessage.html" afterPath="$PROJECT_DIR$/public/postMessage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/recruitment.html" afterPath="$PROJECT_DIR$/public/recruitment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/select.html" afterPath="$PROJECT_DIR$/public/select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/setting.html" afterPath="$PROJECT_DIR$/public/setting.html" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="499">
+              <caret line="147" column="9" selection-start-line="133" selection-start-column="0" selection-end-line="147" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#button#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -46,11 +47,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="select.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/select.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/setting.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="73" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="postMessage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/postMessage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/JS/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="332" column="40" selection-start-line="332" selection-start-column="40" selection-end-line="332" selection-end-column="40" />
+            <state relative-caret-position="264">
+              <caret line="333" column="16" selection-start-line="333" selection-start-column="16" selection-end-line="333" selection-end-column="16" />
               <folding>
                 <element signature="n#!!block;n#checkReName#0" expanded="false" />
                 <element signature="n#!!block;n#checkReCompany#0" expanded="false" />
@@ -64,26 +95,33 @@
                 <element signature="n#!!block;n#checkresertPassword#0" expanded="false" />
                 <element signature="n#!!block;n#checkresertPasswordAgain#0" expanded="false" />
                 <element signature="n#!!block;n#resertFindAll#0" expanded="false" />
+                <marker date="1525596389968" expanded="true" signature="11673:11679" ph=" " />
+                <marker date="1525596389968" expanded="true" signature="11679:11685" ph=" " />
+                <marker date="1525596389968" expanded="true" signature="11685:11691" ph=" " />
+                <marker date="1525596389968" expanded="true" signature="11711:11717" ph=" " />
+                <marker date="1525596389968" expanded="true" signature="11717:11723" ph=" " />
+                <marker date="1525596389968" expanded="true" signature="11723:11729" ph=" " />
+                <marker date="1525596389968" expanded="true" signature="11729:11735" ph=" " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+      <file leaf-file-name="delPost.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql/delPost.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="150">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postMessage.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/postMessage.html">
+      <file leaf-file-name="recruitment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/recruitment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="42" column="124" selection-start-line="42" selection-start-column="124" selection-end-line="42" selection-end-column="124" />
+            <state relative-caret-position="240">
+              <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -106,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/mysql/showAllUser.js" />
         <option value="$PROJECT_DIR$/mysql/update.js" />
@@ -135,7 +172,6 @@
         <option value="$PROJECT_DIR$/public/view/findPassword.html" />
         <option value="$PROJECT_DIR$/public/findPassword.html" />
         <option value="$PROJECT_DIR$/public/resertPassword.html" />
-        <option value="$PROJECT_DIR$/mysql/connection.js" />
         <option value="$PROJECT_DIR$/mysql/insert.js" />
         <option value="$PROJECT_DIR$/public/registered.html" />
         <option value="$PROJECT_DIR$/mysql/userinsert.js" />
@@ -145,18 +181,20 @@
         <option value="$PROJECT_DIR$/public/CSS/select.css" />
         <option value="$PROJECT_DIR$/public/CSS/postMessage.css" />
         <option value="$PROJECT_DIR$/public/CSS/index.css" />
-        <option value="$PROJECT_DIR$/public/recruitment.html" />
-        <option value="$PROJECT_DIR$/public/select.html" />
-        <option value="$PROJECT_DIR$/public/setting.html" />
         <option value="$PROJECT_DIR$/mysql/checkPassword.js" />
         <option value="$PROJECT_DIR$/mysql/checkPhone.js" />
         <option value="$PROJECT_DIR$/public/JS/postMessage.js" />
-        <option value="$PROJECT_DIR$/mysql/insertPost.js" />
-        <option value="$PROJECT_DIR$/mysql/allPost.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/main.html" />
-        <option value="$PROJECT_DIR$/public/JS/index.js" />
+        <option value="$PROJECT_DIR$/mysql/delPost.js" />
+        <option value="$PROJECT_DIR$/mysql/insertPost.js" />
+        <option value="$PROJECT_DIR$/mysql/connection.js" />
+        <option value="$PROJECT_DIR$/mysql/allPost.js" />
+        <option value="$PROJECT_DIR$/public/setting.html" />
+        <option value="$PROJECT_DIR$/public/recruitment.html" />
+        <option value="$PROJECT_DIR$/public/select.html" />
         <option value="$PROJECT_DIR$/public/postMessage.html" />
+        <option value="$PROJECT_DIR$/public/JS/index.js" />
       </list>
     </option>
   </component>
@@ -431,18 +469,18 @@
       <workItem from="1524009584041" duration="4802000" />
       <workItem from="1525484085738" duration="9962000" />
       <workItem from="1525511068204" duration="5030000" />
-      <workItem from="1525575314476" duration="6892000" />
+      <workItem from="1525575314476" duration="12547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206746000" />
+    <option name="totallyTimeSpent" value="212401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-4" width="1299" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1598746" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21316615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -481,7 +519,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.js" />
     <entry file="file://$PROJECT_DIR$/public/build/css/bootstrap-theme.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-31">
@@ -585,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/connection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql/updates.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -635,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/recruitment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/findPassword.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -662,25 +685,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/setting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/registered.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resertPassword.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="39" column="87" selection-start-line="39" selection-start-column="87" selection-end-line="39" selection-end-column="87" />
           <folding />
         </state>
       </provider>
@@ -709,14 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/insertPost.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/JS/postMessage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -725,21 +725,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/select.html">
+    <entry file="file://$PROJECT_DIR$/mysql/delPost.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#button#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#1728#1735#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/insertPost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysql/allPost.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="225">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -752,10 +765,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="147" column="9" selection-start-line="133" selection-start-column="0" selection-end-line="147" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#button#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resertPassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="39" column="87" selection-start-line="39" selection-start-column="87" selection-end-line="39" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="73" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/recruitment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/select.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/postMessage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/JS/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="332" column="40" selection-start-line="332" selection-start-column="40" selection-end-line="332" selection-end-column="40" />
+        <state relative-caret-position="264">
+          <caret line="333" column="16" selection-start-line="333" selection-start-column="16" selection-end-line="333" selection-end-column="16" />
           <folding>
             <element signature="n#!!block;n#checkReName#0" expanded="false" />
             <element signature="n#!!block;n#checkReCompany#0" expanded="false" />
@@ -769,26 +833,14 @@
             <element signature="n#!!block;n#checkresertPassword#0" expanded="false" />
             <element signature="n#!!block;n#checkresertPasswordAgain#0" expanded="false" />
             <element signature="n#!!block;n#resertFindAll#0" expanded="false" />
+            <marker date="1525596389968" expanded="true" signature="11673:11679" ph=" " />
+            <marker date="1525596389968" expanded="true" signature="11679:11685" ph=" " />
+            <marker date="1525596389968" expanded="true" signature="11685:11691" ph=" " />
+            <marker date="1525596389968" expanded="true" signature="11711:11717" ph=" " />
+            <marker date="1525596389968" expanded="true" signature="11717:11723" ph=" " />
+            <marker date="1525596389968" expanded="true" signature="11723:11729" ph=" " />
+            <marker date="1525596389968" expanded="true" signature="11729:11735" ph=" " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#button#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/postMessage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="42" column="124" selection-start-line="42" selection-start-column="124" selection-end-line="42" selection-end-column="124" />
-          <folding />
         </state>
       </provider>
     </entry>

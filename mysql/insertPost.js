@@ -8,7 +8,8 @@ router.post('/insertPost', (req, res)=> {
         user: 'root',
         password: 'root',
         database: 'cems',
-        port: 3306
+        port: 3306,
+        charset: 'utf8_general_ci'
     });
     connection.connect();
     var addSql = 'INSERT INTO post(title, body, label,readed,comments,author,time,school,company) VALUES(?,?,?,?,?,?,?,?,?)';

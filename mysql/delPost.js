@@ -1,24 +1,23 @@
 var mysql = require('mysql');
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-
-router.post('/allPost', (req, res)=> {
-
+router.post('/delPost', (req, res)=> {
     var connection = mysql.createConnection({
         host: 'localhost',
         user: 'root',
         password: 'root',
         database: 'cems',
         port: 3306,
-        charset: 'utf8_general_ci'
+        character:utf-8
     });
     connection.connect();
-    connection.query('select * from post', function (err, result) {
+    var delId = req.body.id;
+    connection.query('DELETE FROM post where id=?', delId, function (err, result) {
         if (err) {
-            console.log('allPost');
+            console.log('delerr');
             return;
         }
-        res.send(result);
+        res.send(200);
     });
 });
 

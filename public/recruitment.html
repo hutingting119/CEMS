@@ -14,11 +14,11 @@
 <header class="row mainTitle">
     <span class="mainHead">全城就业管理系统</span>
     <div class="col-sm-7  mainTitleMenu">
-        <a class="col-sm-2" href="main.html">主页</a>
-        <a href="postMessage.html" class="col-sm-2">发帖</a>
-        <a href="recruitment.html" class="col-sm-2">招聘</a>
-        <a class="col-sm-2" href="select.html">查询</a>
-        <a class="col-sm-2" href="setting.html">设置</a>
+        <a class="col-sm-2" href="" onclick="toMain()" id="toMain">主页</a>
+        <a href="" onclick="toPost()" id="toPost" class="col-sm-2">发帖</a>
+        <a href="" onclick="toRecruitment()" id="toRecruitment" class="col-sm-2">招聘</a>
+        <a href="" onclick="toSelect()" id="toSelect" class="col-sm-2" >查询</a>
+        <a href="" onclick="toSetting()" id="toSetting" class="col-sm-2" >设置</a>
     </div>
     <button class="btn btn-danger exit" ><a href="index.html" style="color: white">退出</a></button>
 </header>
@@ -144,6 +144,23 @@
     </div>
 
 </div>
-
+<script>
+    var userPhone=window.location.search.slice(window.location.search.lastIndexOf("?")+1).split('=')[1];
+    function toPost() {
+        document.getElementById("toPost").href="postMessage.html?userPhone="+userPhone;
+    }
+    function toRecruitment() {
+        document.getElementById("toRecruitment").href="recruitment.html?userPhone="+userPhone;
+    }
+    function toSelect() {
+        document.getElementById("toSelect").href="select.html?userPhone="+userPhone;
+    }
+    function toSetting() {
+        document.getElementById("toSetting").href="setting.html?userPhone="+userPhone;
+    }
+    function toMain() {
+        document.getElementById("toMain").href="main.html?userPhone="+userPhone;
+    }
+</script>
 </body>
 </html>
