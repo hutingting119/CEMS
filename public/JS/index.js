@@ -31,24 +31,29 @@ function checkIndexAll() {
     } else {
         var loginPhone = document.getElementById('phoneNumber').value;
         var checkLoginPassword = document.getElementById("loginPassword").value;
-        $.ajax({
-            type: 'post',
-            url: '/checkPassword',
-            data: JSON.stringify({
-                loginPhone: loginPhone,
-            }),
+        console.log("zhi:"+loginPhone+" "+checkLoginPassword)
+        if (loginPhone === '13222222222' && checkLoginPassword === 'guanliyuan') {
+            console.log("guanliyuan")
+            window.location.href = "http://localhost:3000/manger.html";
+        } else {
+            $.ajax({
+                type: 'post',
+                url: '/checkPassword',
+                data: JSON.stringify({
+                    loginPhone: loginPhone,
+                }),
 
-            contentType: "application/json; charset=utf-8",
-            success: function (result) {
-                console.log("index.js" + result)
-                if (checkLoginPassword === result) {
-                    window.location.href = "http://localhost:3000/main.html?userPhone=" + loginPhone;
-                    // location.replace("http://localhost:3000/main.html");
-                } else {
-                    document.getElementById("indexHint").innerHTML = "帐号或密码错误";
-                }
-            },
-        });
+                contentType: "application/json; charset=utf-8",
+                success: function (result) {
+                    console.log("index.js" + result)
+                    if (checkLoginPassword === result) {
+                        window.location.href = "http://localhost:3000/main.html?userPhone=" + loginPhone;
+                    } else {
+                        document.getElementById("indexHint").innerHTML = "帐号或密码错误";
+                    }
+                },
+            });
+        }
         return false;
     }
 }
