@@ -13,6 +13,7 @@ const del=require('./mysql/del');
 const updates=require('./mysql/updates');
 const insertPost=require('./mysql/insertPost');
 const allPost=require('./mysql/allPost');
+const allRecruitment=require('./mysql/allRecruitment');
 
 app.use(express.static('public'));
 
@@ -23,6 +24,7 @@ app.use('/',updates);
 app.use('/',checkPassword);
 app.use('/',insertPost);
 app.use('/',allPost);
+app.use('/',allRecruitment);
 
 var server = app.listen(3000, () => {
     console.log('listening at port %s', server.address().port);

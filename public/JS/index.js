@@ -31,7 +31,7 @@ function checkIndexAll() {
     } else {
         var loginPhone = document.getElementById('phoneNumber').value;
         var checkLoginPassword = document.getElementById("loginPassword").value;
-        console.log("zhi:"+loginPhone+" "+checkLoginPassword)
+        console.log("zhi:" + loginPhone + " " + checkLoginPassword)
         if (loginPhone === '13222222222' && checkLoginPassword === 'guanliyuan') {
             console.log("guanliyuan")
             window.location.href = "http://localhost:3000/manger.html";
@@ -287,7 +287,6 @@ function allPost() {
         contentType: 'application/json;charset=utf-8',
         success: function (result) {
             for (var i = 0; i < result.length; i++) {
-                console.log(result[i])
                 let title = result[i].title;
                 let body = result[i].body;
                 let label = result[i].label;
@@ -335,7 +334,8 @@ function allPost() {
                     "<span class='link_edit'><a href=''><img src='../images/stick.png' alt=''>置顶</a></span>" +
                     "<span class='link_delete' onclick='delet(this)'>" +
                     "<a href=''><img src='../images/dele.png' alt=''>删除</a></span></div></div>";
-                document.getElementById('tables').appendChild(addTr);
+                var list = document.getElementById("tables")
+                list.insertBefore(addTr, list.childNodes[0]);
 
             }
         }
@@ -354,6 +354,36 @@ function delet(obj) {
         success: function (result) {
             allPost();
             console.log(result);
+        }
+    })
+}
+
+//显示所有招聘信息
+function allRecruitment() {
+    $.ajax({
+        type: 'post',
+        url: '/allRecruitment',
+        contentType: 'application/json;charset=utf-8',
+        success: function (result) {
+            for (var i = 0; i < result.length; i++) {
+                let title = result[i].title;
+                let body = result[i].body;
+                let id = result[i].id;
+                let author = result[i].author;
+                let time = result[i].time;
+                var addTr = document.createElement('tr');
+                addTr.title = result[i].title;
+                addTr.body = result[i].body;
+                addTr.id = result[i].id;
+                addTr.author = result[i].author;
+                addTr.time = result[i].time;
+                addTr.innerHTML = "<div class='mainData'><a>" + title + "</a>" + "<span class='mainDataImg'>" +
+                    "发帖人：" + author + "</span><div class='mainDataBody'>" + body + "</div><div class='article_manage'>" +
+                    "<span class='link_postdate'>时间：" + time + "</span></div></div>";
+                var list = document.getElementById("recritmentTable")
+                list.insertBefore(addTr, list.childNodes[0]);
+
+            }
         }
     })
 }

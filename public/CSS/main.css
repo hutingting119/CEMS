@@ -80,7 +80,14 @@ body {
     margin-left: 20px;
 }
 
-.mainTitleMenu a{
+.mainTitleMenu a {
     color: yellow;
     cursor: pointer;
+}
+
+.recruitmentTitle {
+    height: 50px;
+    margin-left: 165px;
+    color: #FF0069;
+    font-size: 23px;
 }
