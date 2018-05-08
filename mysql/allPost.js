@@ -15,7 +15,6 @@ router.post('/allPost', (req, res)=> {
     connection.connect();
     connection.query('select * from post', function (err, result) {
         if (err) {
-            console.log('allPost');
             return;
         }
         res.send(result);
