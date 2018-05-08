@@ -14,6 +14,8 @@ const updates=require('./mysql/updates');
 const insertPost=require('./mysql/insertPost');
 const allPost=require('./mysql/allPost');
 const allRecruitment=require('./mysql/allRecruitment');
+const selectCompany=require('./mysql/selectCompany');
+const settingUpdate=require('./mysql/settingUpdate');
 
 app.use(express.static('public'));
 
@@ -25,6 +27,8 @@ app.use('/',checkPassword);
 app.use('/',insertPost);
 app.use('/',allPost);
 app.use('/',allRecruitment);
+app.use('/',selectCompany);
+app.use('/',settingUpdate);
 
 var server = app.listen(3000, () => {
     console.log('listening at port %s', server.address().port);

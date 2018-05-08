@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script type="text/javascript" src="JS/index.js"></script>
+    <!--<script type="text/javascript" src="JS/index.js"></script>-->
     <script type="text/javascript" src="build/JS/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="build/JS/jquery-3.1.0.min.js"></script>
     <link rel="stylesheet" href="build/css/bootstrap.css">
     <script type="text/javascript" src="build/JS/bootstrap.min.js"></script>
     <script type="text/javascript" src="build/JS/echarts.min.js"></script>
+    <script type="text/javascript" src="JS/select.js"></script>
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/select.css">
 </head>
@@ -26,23 +27,20 @@
 </header>
 
 <div class="maindatas">
-    <input type="text" class="form-control selectTitle" placeholder="请输入公司名称">
-    <button type="button" class="btn btn-success selectButton" data-toggle="modal" data-target="#myModal">查询</button>
+    <input type="text" class="form-control selectTitle" placeholder="请输入公司名称" id="selectInput">
+    <button type="button" class="btn btn-success selectButton" data-toggle="modal" data-target="#myModal" onclick="selectCompany()">查询</button>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                        &times;
-                    </button>
                     <h4 class="modal-title" id="myModalLabel">
-                        公司名称：
+                        公司名称：<span id="companyName"></span>
                     </h4>
                 </div>
                 <div class="modal-body">
-                    <div class="selectCompanyBoyd">公司简介：<span>xxx</span></div>
-                    <div>预计招聘毕业生人数：<span>222</span></div>
-                    <div>实际已招聘毕业生人数：<span>3333</span></div>
+                    <div class="selectCompanyBoyd">公司简介：<span id="companyBody"></span></div>
+                    <div>预计招聘毕业生人数：<span id="exHiring"></span></div>
+                    <div>实际已招聘毕业生人数：<span id="hasHiring"></span></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭
@@ -52,7 +50,6 @@
         </div>
     </div>
     <div id="selectData"></div>
-
 </div>
 <script>
     var userPhone = window.location.search.slice(window.location.search.lastIndexOf("?") + 1).split('=')[1];
