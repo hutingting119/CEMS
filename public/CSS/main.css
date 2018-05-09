@@ -98,18 +98,30 @@ body {
     margin-left: 490px;
 }
 
-.mangerPost {
-    width: 50%;
-    border: 1px solid #b9def0;
-    margin-top: 20px;
-}
 .mangerTable{
+    display: inline-flex;
     height: 380px;
     background: #ffffff;
+    width: 100%;
 }
 .modal-body {
     margin-left: 50px;
 }
 .form-group {
     margin-bottom: 29px;
+}
+.mangerTbaleLeft{
+    width: 48%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.mangertables{
+    width: 99%;
+    margin-top: 22px;
+    border: 2px solid;
+}
+.mangerTbaleRight{
+    width: 48%;
+    margin-top: 20px;
+    margin-right: 40px;
 }

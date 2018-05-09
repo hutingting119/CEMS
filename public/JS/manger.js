@@ -57,6 +57,27 @@ $.ajax({
 //     })
 // }
 
+function addCompany() {
+    var coName = document.getElementById("coName").value;
+    var coBody = document.getElementById("coBody").value;
+    var exHiring = document.getElementById("exHiring").value;
+    var hasHiring = document.getElementById("hasHiring").value;
+    $.ajax({
+        type: 'post',
+        url: '/insertCompany',
+        data: JSON.stringify({
+            name: coName,
+            body: coBody,
+            exHiring: exHiring,
+            hasHiring: hasHiring,
+        }),
+        contentType: "application/json; charset=utf-8",
+        success: function (result) {
+            location.replace(location);
+        },
+    });
+}
+
 $.ajax({
     type: 'post',
     url: '/allRecruitment',
@@ -94,6 +115,7 @@ function checkMangerRe() {
         document.getElementById("reSubmit").disabled = false;
     }
 }
+
 function addRecruitment() {
     var retitle = document.getElementById('retitle').value;
     var rebody = document.getElementById('rebody').value;
@@ -126,6 +148,16 @@ function addRecruitment() {
     });
 }
 
+function checkMangerCo() {
+    var coName = document.getElementById("coName").value;
+    var coBody = document.getElementById("coBody").value;
+    var exHiring = document.getElementById("exHiring").value;
+    var hasHiring = document.getElementById("hasHiring").value;
+    if (coName && coBody && exHiring && hasHiring) {
+        document.getElementById("coSubmit").disabled = false;
+    }
+}
+
 function deletRe(obj) {
     var trId = obj.parentNode.parentNode.id;
     var trObj = document.getElementById(trId);
@@ -146,6 +178,40 @@ $.ajax({
     contentType: 'application/json;charset=utf-8',
     success: function (result) {
         document.getElementById('companyNum').innerHTML = result.length;
+        for (var i = 0; i < result.length; i++) {
+            let name = result[i].name;
+            let body = result[i].body;
+            let id = result[i].id;
+            let exHiring = result[i].exHiring;
+            let hasHiring = result[i].hasHiring;
+            var addTr = document.createElement('tr');
+            addTr.title = result[i].title;
+            addTr.body = result[i].body;
+            addTr.id = result[i].id;
+            addTr.author = result[i].author;
+            addTr.time = result[i].time;
+            addTr.innerHTML = "<td class='thStylr' id='num'>" + id + "</td>" +
+                "<td class='thStylr'>" + name + "</td>" +
+                "<td class='thStylr'>" + body + "</td>" +
+                "<td class='thStylr'>" + exHiring + "</td>" +
+                "<td class='thStylr'>" + hasHiring + "</td>" +
+                "<td class='thStylr'><span  onclick='deletCo(this)'><img src='../images/del.png'></span></td>";
+            document.getElementById('mangerCompany').appendChild(addTr);
+        }
 
     }
 });
+
+function deletCo(obj) {
+    var trId = obj.parentNode.parentNode.id;
+    var trObj = document.getElementById(trId);
+    document.getElementById("mangerCompany").removeChild(trObj);
+    $.ajax({
+        type: "post",
+        url: "/delCompany",
+        data: JSON.stringify({id: trId}),
+        contentType: "application/json;charset=utf-8",
+        success: function (result) {
+        }
+    })
+}

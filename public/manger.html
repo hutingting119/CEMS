@@ -44,58 +44,132 @@
     <!--</tr>-->
     <!--</thead>-->
     <!--</table>-->
-    <span data-toggle="modal" data-target="#myModal"><img src="./images/addTable.png">添加招聘信息</span>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">添加招聘信息</h4>
-                </div>
-
-                <div class="modal-body">
-                    <div class="form-group ">
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" placeholder="招聘题目" id="retitle" onkeydown="checkMangerRe()">
-                        </div>
+    <div class="mangerTbaleLeft">
+        <span data-toggle="modal" data-target="#myModal"><img src="./images/addTable.png">添加招聘信息</span>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">添加招聘信息</h4>
                     </div>
-                    <br>
 
-                    <div class="form-group ">
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" placeholder="招聘内容" id="rebody" onkeydown="checkMangerRe()">
+                    <div class="modal-body">
+                        <div class="form-group ">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="招聘题目" id="retitle"
+                                       onkeydown="checkMangerRe()">
+                            </div>
                         </div>
-                    </div>
-                    <br>
+                        <br>
 
-                    <div class="form-group ">
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" placeholder="作者" id="reauthor" onkeydown="checkMangerRe()">
+                        <div class="form-group ">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="招聘内容" id="rebody"
+                                       onkeydown="checkMangerRe()">
+                            </div>
                         </div>
+                        <br>
+
+                        <div class="form-group ">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="作者" id="reauthor"
+                                       onkeydown="checkMangerRe()">
+                            </div>
+                        </div>
+                        <br>
                     </div>
-                    <br>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">取消
-                    </button>
-                    <button type="button" class="btn btn-primary" disabled="disabled" id="reSubmit" onclick='addRecruitment()'>
-                        提交
-                    </button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消
+                        </button>
+                        <button type="button" class="btn btn-primary" disabled="disabled" id="reSubmit"
+                                onclick='addRecruitment()'>
+                            提交
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+        <table class="table mangertables" id="mangerRecruitment">
+            <thead>
+            <tr>
+                <th class="thStylr">编号</th>
+                <th class="thStylr">题目</th>
+                <th class="thStylr">内容</th>
+                <th class="thStylr">联系人</th>
+                <th class="thStylr">时间</th>
+                <th class="thStylr">删除</th>
+            </tr>
+            </thead>
+        </table>
     </div>
-    <table class="table mangerPost" id="mangerRecruitment" style="width: 50%;margin-top: 20px;">
-        <thead>
-        <tr>
-            <th class="thStylr">编号</th>
-            <th class="thStylr">题目</th>
-            <th class="thStylr">内容</th>
-            <th class="thStylr">联系人</th>
-            <th class="thStylr">时间</th>
-            <th class="thStylr">删除</th>
-        </tr>
-        </thead>
-    </table>
+
+    <div class="mangerTbaleRight">
+        <span data-toggle="modal" data-target="#comModal"><img src="./images/addTable.png">添加公司信息</span>
+        <div class="modal fade" id="comModal" tabindex="-1" role="dialog" aria-labelledby="comModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="comModalLabel">添加公司信息</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="form-group ">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="公司名称" id="coName"
+                                       onkeydown="checkMangerCo()">
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="form-group ">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="简介" id="coBody"
+                                       onkeydown="checkMangerCo()">
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="form-group ">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="预招人数" id="exHiring"
+                                       onkeydown="checkMangerCo()">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group ">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="预招人数" id="hasHiring"
+                                       onkeydown="checkMangerCo()">
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消
+                        </button>
+                        <button type="button" class="btn btn-primary" disabled="disabled" id="coSubmit"
+                                onclick='addCompany()'>
+                            提交
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table mangertables" id="mangerCompany">
+            <thead>
+            <tr>
+                <th class="thStylr">编号</th>
+                <th class="thStylr">公司名称</th>
+                <th class="thStylr">简介</th>
+                <th class="thStylr">预招</th>
+                <th class="thStylr">已招</th>
+                <th class="thStylr">删除</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
 </div>
 
 

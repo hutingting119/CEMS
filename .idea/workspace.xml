@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60369308-d958-4eb1-8881-dbb9ac4eff34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/addTable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/del.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/delPost.js" afterPath="$PROJECT_DIR$/mysql/delPost.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/selectCompany.js" afterPath="$PROJECT_DIR$/mysql/selectCompany.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/CSS/main.css" afterPath="$PROJECT_DIR$/public/CSS/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/JS/manger.js" afterPath="$PROJECT_DIR$/public/JS/manger.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/manger.html" afterPath="$PROJECT_DIR$/public/manger.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,30 +41,42 @@
       <file leaf-file-name="manger.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/manger.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="71" column="97" selection-start-line="71" selection-start-column="97" selection-end-line="71" selection-end-column="97" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manger.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/JS/manger.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="128" column="20" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
+            <state relative-caret-position="320">
+              <caret line="159" column="59" selection-start-line="159" selection-start-column="46" selection-end-line="159" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delPost.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manger.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/JS/manger.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="206" column="46" selection-start-line="206" selection-start-column="46" selection-end-line="206" selection-end-column="46" />
+              <folding>
+                <element signature="e#427#471#0" expanded="false" />
+                <element signature="e#1832#1856#0" expanded="false" />
+                <element signature="e#6304#7548#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="selectCompany.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql/selectCompany.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delPost.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql/delPost.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="496">
+              <caret line="38" column="3" selection-start-line="22" selection-start-column="0" selection-end-line="38" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -153,7 +161,6 @@
         <option value="$PROJECT_DIR$/mysql/allRecruitment.js" />
         <option value="$PROJECT_DIR$/public/recruitment.html" />
         <option value="$PROJECT_DIR$/public/JS/slelct.js" />
-        <option value="$PROJECT_DIR$/mysql/selectCompany.js" />
         <option value="$PROJECT_DIR$/public/JS/select.js" />
         <option value="$PROJECT_DIR$/public/CSS/select.css" />
         <option value="$PROJECT_DIR$/public/select.html" />
@@ -165,12 +172,13 @@
         <option value="$PROJECT_DIR$/mysql/checkPhone.js" />
         <option value="$PROJECT_DIR$/public/JS/index.js" />
         <option value="$PROJECT_DIR$/mysql/allCompany.js" />
-        <option value="$PROJECT_DIR$/public/CSS/main.css" />
-        <option value="$PROJECT_DIR$/public/manger.html" />
         <option value="$PROJECT_DIR$/mysql/insertRecruitment.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/mysql/delRecruitment.js" />
         <option value="$PROJECT_DIR$/mysql/delPost.js" />
+        <option value="$PROJECT_DIR$/public/CSS/main.css" />
+        <option value="$PROJECT_DIR$/public/manger.html" />
+        <option value="$PROJECT_DIR$/mysql/selectCompany.js" />
         <option value="$PROJECT_DIR$/public/JS/manger.js" />
       </list>
     </option>
@@ -467,12 +475,12 @@
       <workItem from="1525575314476" duration="12755000" />
       <workItem from="1525692863841" duration="4729000" />
       <workItem from="1525744197882" duration="23879000" />
-      <workItem from="1525851197616" duration="5165000" />
+      <workItem from="1525851197616" duration="9916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246382000" />
+    <option name="totallyTimeSpent" value="251133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="24" width="1299" height="744" extended-state="6" />
@@ -656,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/selectCompany.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql/settingUpdate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -671,13 +672,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysql/updates.js" />
-    <entry file="file://$PROJECT_DIR$/mysql/checkPhone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql/allRecruitment.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -748,14 +742,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/CSS/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/postMessage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -800,28 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/manger.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="71" column="97" selection-start-line="71" selection-start-column="97" selection-end-line="71" selection-end-column="97" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql/insertPost.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/insertRecruitment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -834,14 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/JS/manger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="128" column="20" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql/delRecruitment.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -850,11 +810,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/CSS/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/checkPhone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/insertRecruitment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysql/delPost.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="496">
+          <caret line="38" column="3" selection-start-line="22" selection-start-column="0" selection-end-line="38" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/selectCompany.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/manger.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="159" column="59" selection-start-line="159" selection-start-column="46" selection-end-line="159" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/JS/manger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="206" column="46" selection-start-line="206" selection-start-column="46" selection-end-line="206" selection-end-column="46" />
+          <folding>
+            <element signature="e#427#471#0" expanded="false" />
+            <element signature="e#1832#1856#0" expanded="false" />
+            <element signature="e#6304#7548#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
