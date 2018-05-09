@@ -91,8 +91,25 @@ body {
     color: #FF0069;
     font-size: 23px;
 }
-.mangerNum{
-    font-size: 35px;
-    margin-top: 50px;
+
+.mangerNum {
+    font-size: 22px;
+    margin-top: 10px;
     margin-left: 490px;
+}
+
+.mangerPost {
+    width: 50%;
+    border: 1px solid #b9def0;
+    margin-top: 20px;
+}
+.mangerTable{
+    height: 380px;
+    background: #ffffff;
+}
+.modal-body {
+    margin-left: 50px;
+}
+.form-group {
+    margin-bottom: 29px;
 }

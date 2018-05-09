@@ -17,6 +17,7 @@ const selectCompany=require('./mysql/selectCompany');
 const settingUpdate=require('./mysql/settingUpdate');
 const delPost=require('./mysql/delPost');
 const allCompany=require('./mysql/allCompany');
+const insertRecruitment=require('./mysql/insertRecruitment');
 
 app.use(express.static('public'));
 
@@ -31,6 +32,7 @@ app.use('/',selectCompany);
 app.use('/',settingUpdate);
 app.use('/',delPost);
 app.use('/',allCompany);
+app.use('/',insertRecruitment);
 
 var server = app.listen(3000, () => {
     console.log('listening at port %s', server.address().port);
