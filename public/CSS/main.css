@@ -93,34 +93,42 @@ body {
 }
 
 .mangerNum {
+    display: inline-flex;
+    height: 50px;
     font-size: 22px;
     margin-top: 10px;
-    margin-left: 490px;
+    margin-left: 230px;
 }
 
-.mangerTable{
+.mangerTable {
     display: inline-flex;
-    height: 380px;
+    min-height: 380px;
     background: #ffffff;
+    margin-left: 5px;
     width: 100%;
 }
+
 .modal-body {
     margin-left: 50px;
 }
+
 .form-group {
     margin-bottom: 29px;
 }
-.mangerTbaleLeft{
+
+.mangerTbaleLeft {
     width: 48%;
     margin-top: 20px;
     margin-left: 40px;
 }
-.mangertables{
+
+.mangertables {
     width: 99%;
     margin-top: 22px;
     border: 2px solid;
 }
-.mangerTbaleRight{
+
+.mangerTbaleRight {
     width: 48%;
     margin-top: 20px;
     margin-right: 40px;

@@ -13,7 +13,7 @@ router.post('/checkPassword', (req, res)=> {
     });
     connection.connect();
     var phone = req.body.loginPhone;
-    connection.query('select userpassword from users where userphone',phone, function (err, result) {
+    connection.query('select userpassword from users where userphone=?',phone, function (err, result) {
         res.send(result[0].userpassword);
     });
 });

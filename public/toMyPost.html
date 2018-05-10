@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script type="text/javascript" src="JS/index.js"></script>
     <script type="text/javascript" src="build/JS/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="build/JS/jquery-3.1.0.min.js"></script>
     <link rel="stylesheet" href="build/css/bootstrap.css">
     <script type="text/javascript" src="build/JS/bootstrap.min.js"></script>
     <link rel="stylesheet" href="CSS/main.css">
+    <script type="text/javascript" src="JS/myPost.js"></script>
 </head>
-<body onload="allRecruitment()">
+<body>
+
 <header class="row mainTitle">
     <span class="mainHead">全城就业管理系统</span>
     <div class="col-sm-7  mainTitleMenu">
-        <a class="col-sm-2" href="main.html">主页</a>
+        <a class="col-sm-2" onclick="toMain()" id="toMain" href="main.html">主页</a>
         <a href="" onclick="toPost()" id="toPost" class="col-sm-2">发帖</a>
         <a href="" onclick="toMyPost()" id="toMyPost" class="col-sm-2">已发</a>
         <a href="" onclick="toRecruitment()" id="toRecruitment" class="col-sm-2">招聘</a>
@@ -24,13 +25,25 @@
     <button class="btn btn-danger exit"><a href="index.html" style="color: white">退出</a></button>
 </header>
 <div class="maindatas">
-    <div class="recruitmentTitle">企业发布招聘信息请联系管理员审核后发布，联系电话：13222222222</div>
-
-    <table id="recritmentTable" style="width: 100%;">
+    <table class="table" id="myPost" style="width: 100%;margin-top: 20px;">
+        <thead>
+        <tr>
+            <th class="thStylr">编号</th>
+            <th class="thStylr">题目</th>
+            <th class="thStylr">内容</th>
+            <th class="thStylr">阅读量</th>
+            <th class="thStylr">发表时间</th>
+            <th class="thStylr">删除</th>
+        </tr>
+        </thead>
     </table>
+
 </div>
 <script>
     var userPhone = window.location.search.slice(window.location.search.lastIndexOf("?") + 1).split('=')[1];
+    function toMain() {
+        document.getElementById("toMain").href = "main.html?userPhone=" + userPhone;
+    }
     function toPost() {
         document.getElementById("toPost").href = "postMessage.html?userPhone=" + userPhone;
     }
@@ -42,9 +55,6 @@
     }
     function toSetting() {
         document.getElementById("toSetting").href = "setting.html?userPhone=" + userPhone;
-    }
-    function toMain() {
-        document.getElementById("toMain").href = "main.html?userPhone=" + userPhone;
     }
     function toMyPost() {
         document.getElementById("toMyPost").href = "toMyPost.html?userPhone=" + userPhone;

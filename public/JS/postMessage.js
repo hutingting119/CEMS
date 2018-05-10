@@ -51,6 +51,7 @@ function postSubmit(data) {
                         type: 'post',
                         url: '/insertPost',
                         data: JSON.stringify({
+                            usePhone:userphone,
                             title: title,
                             body: body,
                             label: label,
@@ -64,7 +65,6 @@ function postSubmit(data) {
 
                         contentType: "application/json; charset=utf-8",
                         success: function (result) {
-                            console.log("post 70");
                             window.location.href = "http://localhost:3000/main.html?userPhone=" + userphone;
                         },
                     });

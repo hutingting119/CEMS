@@ -296,7 +296,7 @@ function allPost() {
                 let time = result[i].time;
                 let school = result[i].school;
                 let company = result[i].company;
-                var num = result[i].id;
+                var id = result[i].id;
                 var addTr = document.createElement('tr');
                 addTr.title = result[i].title;
                 addTr.body = result[i].body;
@@ -325,15 +325,20 @@ function allPost() {
                     default:
                         labels = "";
                 }
-                addTr.innerHTML = "<div class='mainData' id='num'><a>" + title + "</a>" + labels + "<span class='mainDataImg'>" +
-                    "发帖人：" + author + "&nbsp;&nbsp;&nbsp;就业公司：" + company + "&nbsp;&nbsp;&nbsp;&nbsp;毕业院校:" +
-                    school + "</span><div class='mainDataBody'>" + body + "</div><div class='article_manage'>" +
-                    "<span class='link_postdate'>" + time + "</span><span class='link_view'><a href=''>" +
-                    "<img src='../images/read.png'>阅读</a>(" + readed + ")" + "</span><span class='link_comments'>" +
-                    "<a href=''><img src='../images/comment.png' alt=''>评论</a>(" + comm + ")</span>" +
-                    "<span class='link_edit'><a href=''><img src='../images/stick.png' alt=''>当前排行：</a>(" + num + ")" +
-                    "</span><span class='link_delete'  onclick='delet(this)'>" +
-                    "<a><img src='../images/dele.png' alt=''>删除</a></span></div></div>";
+
+
+                addTr.innerHTML =
+                    "<div class='mainData'><a>" + title + "</a>" + labels +
+                    "<span class='mainDataImg'>" + "发帖人：" + author + "&nbsp;&nbsp;&nbsp;" +
+                    "就业公司：" + company + "&nbsp;&nbsp;&nbsp;&nbsp;" +
+                    "毕业院校:" + school + "</span>" +
+                    "<div class='mainDataBody'>" + body + "</div>" +
+                    "<div class='article_manage'>" +
+                    "<span class='link_postdate'>" + time + "</span>" +
+                    "<span class='link_view'><a href=''>" + "<img src='../images/read.png'>阅读</a>(" + readed + ")" + "</span>" +
+                    "<span class='link_comments'>" + "<a href=''><img src='../images/comment.png' alt=''>评论</a>(" + comm + ")</span>" +
+                    "<span class='link_edit'><a href=''><img src='../images/stick.png' alt=''>当前排行：</a>(" + id + ")" + "</span>" +
+                    "</div></div>";
                 var list = document.getElementById("tables");
                 list.insertBefore(addTr, list.childNodes[0]);
 
@@ -342,23 +347,6 @@ function allPost() {
     })
 }
 
-function delet(obj) {
-    var trId = obj;
-    console.log(obj);
-
-    var trObj = document.getElementById(trId);
-    // document.getElementById("tables").removeChild(trObj);
-    // $.ajax({
-    //     type: "post",
-    //     url: "/delPost",
-    //     data: JSON.stringify({id: trId}),
-    //     contentType: "application/json;charset=utf-8",
-    //     success: function (result) {
-    //         allPost();
-    //         console.log(result);
-    //     }
-    // })
-}
 
 //显示所有招聘信息
 function allRecruitment() {

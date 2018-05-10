@@ -17,8 +17,9 @@
 <header class="row mainTitle">
     <span class="mainHead">全城就业管理系统</span>
     <div class="col-sm-7  mainTitleMenu">
-        <a class="col-sm-2" href="" onclick="toMain()" id="toMain">主页</a>
+        <a class="col-sm-2" href="main.html">主页</a>
         <a href="" onclick="toPost()" id="toPost" class="col-sm-2">发帖</a>
+        <a href="" onclick="toMyPost()" id="toMyPost" class="col-sm-2">已发</a>
         <a href="" onclick="toRecruitment()" id="toRecruitment" class="col-sm-2">招聘</a>
         <a href="" onclick="toSelect()" id="toSelect" class="col-sm-2">查询</a>
         <a href="" onclick="toSetting()" id="toSetting" class="col-sm-2">设置</a>
@@ -67,6 +68,9 @@
     }
     function toMain() {
         document.getElementById("toMain").href = "main.html?userPhone=" + userPhone;
+    }
+    function toMyPost() {
+        document.getElementById("toMyPost").href = "toMyPost.html?userPhone=" + userPhone;
     }
     var myChart = echarts.init(document.getElementById('selectData'));
     var option = {

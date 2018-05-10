@@ -35,13 +35,13 @@ $.ajax({
         //         "<td class='thStylr'>" + time + "</td>" +
         //         "<td class='thStylr'>" + school + "</td>" +
         //         "<td class='thStylr'>" + company + "</td>" +
-        //         "<td class='thStylr'><span  onclick='delet(this)'><img src='../images/del.png'></span></td>";
-        //     document.getElementById('mangerPost').appendChild(addTr);
+        //         "<td class='thStylr'><span  onclick='deleMyPost(this)'><img src='../images/del.png'></span></td>";
+        //     document.getElementById('myPost').appendChild(addTr);
         // }
     }
 });
 
-// function delet(obj) {
+// function deleMyPost(obj) {
 //     var trId = obj.parentNode.parentNode.id;
 //     var trObj = document.getElementById(trId);
 //     document.getElementById("mangerPost").removeChild(trObj);
@@ -160,6 +160,7 @@ function checkMangerCo() {
 
 function deletRe(obj) {
     var trId = obj.parentNode.parentNode.id;
+    console.log(trId)
     var trObj = document.getElementById(trId);
     document.getElementById("mangerRecruitment").removeChild(trObj);
     $.ajax({
